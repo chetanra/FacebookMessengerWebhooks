@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
 namespace Facebook.Messenger.Buttons
@@ -11,7 +11,7 @@ namespace Facebook.Messenger.Buttons
 
         [JsonProperty("webview_height_ratio")]
         [JsonConverter(typeof(StringEnumConverter))]
-        public WebviewHeightRatioEnum WebviewHeightRatio { get; set; }
+        public WebviewHeightRatioEnum? WebviewHeightRatio { get; set; }
 
         [JsonProperty("messenger_extensions")]
         public bool? MessengerExtensions { get; set; }
